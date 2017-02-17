@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.kch.spring</groupId>
-    <artifactId>mvc1</artifactId>
+    <artifactId>mvc3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>SDA: Spring MVC: 1 XML configuration</name>
+    <name>SDA: Spring MVC: 3 Java configuration</name>
 
     <properties>
         <spring.framework.version>4.3.6.RELEASE</spring.framework.version>
@@ -55,8 +55,17 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                        <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                        <warName>3_java_configuration</warName>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>1_xml_configuration</finalName>
     </build>
 </project>
