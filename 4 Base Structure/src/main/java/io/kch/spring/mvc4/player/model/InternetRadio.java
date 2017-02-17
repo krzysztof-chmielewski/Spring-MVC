@@ -17,6 +17,7 @@ public class InternetRadio implements MusicPlayer {
     @Override
     public void playSong(Song song) {
         currentSong = song;
+        playedSongs.add(currentSong);
     }
 
     @Override
