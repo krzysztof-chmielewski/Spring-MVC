@@ -15,7 +15,7 @@ public class MusicPlayerController {
         this.musicPlayer = musicPlayer;
     }
 
-    @RequestMapping(path = "")
+    @RequestMapping(path = {"", "home"})
     public String index(Model model) {
         model.addAttribute("message", "Currently playing");
         model.addAttribute("song", musicPlayer.currentSong());
