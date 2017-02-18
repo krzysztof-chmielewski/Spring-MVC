@@ -37,7 +37,6 @@ public class MusicPlayerController {
     }
 
     @RequestMapping(path = "playSong", method = RequestMethod.POST)
-    //TODO: Notice how I use Errors class and which view is returned when errors occur
     public String playSong(@Valid Song song, Errors errors)  {
         if (errors.hasErrors()) {
             return "playSong";
