@@ -10,8 +10,8 @@
     <!-- notice how messages are displayed in .jsp file -->
     <label><spring:message code="music.player.view.playSong.artist" /> <form:errors path="song.artist" />: <input type="text" name="artist" /></label>
     <!-- do the same for album and title -->
-    <label>Album <form:errors path="song.title" />: <input type="text" name="album" /></label>
-    <label>Title <form:errors path="song.album" />: <input type="text" name="title" /></label>
+    <label>Album <form:errors path="song.album" />: <input type="text" name="album" /></label>
+    <label>Title <form:errors path="song.title" />: <input type="text" name="title" /></label>
     <input type="submit" />
 </form>
 </body>
